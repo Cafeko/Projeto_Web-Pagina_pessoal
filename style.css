@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* - Geral ----------------------- */
+html, body
+{
+    height: 100%;
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+
+.Division
+{
+    background-color: #ececec34;
+    border-radius: 100%;
+    height: 1px;
+}
+
+.Link_Text
+{
+    color: #4d0099;
+    text-decoration: none;
+}
+/* ------------------------------- */
+
+/* - Pagina inteira -------------- */
+.page
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/* ------------------------------- */
+
+/* - Menu ----------------------- */
+.Menu
+{
+    background-color: #210041;
+    width: 20%;
+    height: 100%;
+}
+/* ------------------------------- */
+
+/* - Menu Top -------------------- */
+.Menu_Top
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu_Top h2, .Menu_Top p
+{
+    text-align: center;
+    color: #ececec;
+    line-height: 1.5;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+}
+
+.Menu_Top h2
+{
+    font-size: clamp(10px, 2.3vw, 30px);
+    font-weight: 500;
+}
+
+.Menu_Top p
+{
+    font-size: clamp(10px, 2vw, 25px);
+    font-weight: 400;
+}
+
+#Photo
+{
+    width: 50%;
+    color: #ececec;
+}
+
+.Menu_Top .Division
+{
+    width: 95%;
+}
+
+/* ------------------------------- */
+
+/* - Menu Buttons ---------------- */
+
+.Menu_Buttons
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style-type: none;
+    padding-top: 10%;
+    gap: 5px;
+}
+
+.Menu_Buttons .Division
+{
+    width: 82%;
+}
+
+.Menu_Buttons li
+{
+    width: 80%;
+    height: 40px;
+}
+
+.Menu_Button
+{
+    background-color: #210041;
+    border-color: #21004100;
+    color: #ececec;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: clamp(10px, 1.5vw, 16px);
+}
+
+.Menu_Button.Selected
+{
+    background-color: #15002b;
+    color: #9b9b9b;
+}
+/* ------------------------------- */
+
+/* - Infos ----------------------- */
+.Content
+{
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+}
+/* ------------------------------- */
+
+/* - Projeto web ----------------- */
+#Projeto_Web
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Projeto_Web h1
+{
+    padding-top: 15%;
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.5;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#Projeto_Web #Text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#Projeto_Web #Text p
+{
+    width: 70%;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+#Projeto_Web #Text div
+{
+    width: 100%;
+    font-size: clamp(10px, 1.5vw, 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding-left: 20%;
+}
+
+#Projeto_Web #Text div p
+{
+    width: 100%;
+    text-align: start;
+    font-size: clamp(10px, 1.5vw, 20px);
+}
+/* ------------------------------- */
+
+/* - Sobre mim ------------------- */
+#Sobre_Mim
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#Sobre_Mim h1
+{
+    padding-top: 5%;
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.5;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#Sobre_Mim #Text
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#Sobre_Mim #Text p
+{
+    width: 80%;
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+#Sobre_Mim #Text h2
+{
+    align-self: start;
+    font-size: clamp(14px, 2vw, 24px);
+    padding-left: 15%;
+}
+
+#Sobre_Mim #Text #More
+{
+    width: 100%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#Sobre_Mim #Text #More p
+{
+    text-align: start;
+    width: 100%;
+    font-size: clamp(10px, 1.5vw, 20px);
+}
+/* ------------------------------- */
+
+/* - Faculdade ------------------- */
+#Faculdade
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#Faculdade h1
+{
+    padding-top: 10%;
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.5;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#Faculdade div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Faculdade div #Text
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: start;
+}
+
+#Faculdade div #Text p
+{
+    text-align: start;
+    width: 100%;
+    font-size: clamp(10px, 1.5vw, 20px);
+}
+
+#Faculdade div img
+{
+    width: 30%;
+}
+/* ------------------------------- */
+
+/* - Programacao ----------------- */
+#Programacao
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#Programacao h1
+{
+    padding-top: 5%;
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.5;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#Programacao #Text
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    gap: 50px;
+}
+
+#Programacao #Text .Part
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#Programacao #Text .Part div
+{
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#Programacao #Text .Part div p
+{
+    font-size: clamp(14px, 2vw, 24px);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#Programacao #Text .Part div img
+{
+    height: 100%;
+}
+
+#Programacao #Text .Part p
+{
+    font-size: clamp(10px, 2vw, 20px);
+}
+/* ------------------------------- */
+
+/* - Fontes ---------------------- */
+#Fontes
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#Fontes h1
+{
+    padding-top: 10%;
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.5;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#Fontes #Text
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#Fontes #Text h2
+{
+    font-size: clamp(14px, 2vw, 24px);
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: start;
+}
+
+#Fontes #Text div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: start;
+    font-size: clamp(10px, 1.5vw, 20px);
+}
+/* ------------------------------- */
